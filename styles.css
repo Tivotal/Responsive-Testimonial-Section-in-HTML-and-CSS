@@ -1,0 +1,98 @@
+/* Created by Tivotal */
+
+/* Google Fonts(Poppins) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  display: grid;
+  place-items: center;
+  background: #4070f4;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.wrapper .box {
+  background: #fff;
+  padding: 25px;
+  border-radius: 3px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  width: calc(33% - 10px);
+}
+
+.wrapper .box .icon {
+  font-size: 20px;
+  color: #4070f4;
+}
+
+.wrapper .box .content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-top: 10px;
+}
+
+.wrapper .box .content .info .name {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.wrapper .box .content .info .job {
+  font-size: 16px;
+  font-weight: 500;
+  color: #4070f4;
+}
+
+.wrapper .box .content .info .stars {
+  margin-top: 2px;
+}
+
+.wrapper .box .content .info .stars i {
+  color: #4070f4;
+}
+
+.wrapper .box .content .image {
+  height: 75px;
+  width: 75px;
+  background: #4070f4;
+  border-radius: 50%;
+  padding: 3px;
+}
+
+.wrapper .box .content .image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  object-fit: cover;
+}
+
+@media (max-width: 1045px) {
+  .wrapper .box {
+    width: calc(50% - 10px);
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 702px) {
+  .wrapper .box {
+    width: 100%;
+  }
+}
